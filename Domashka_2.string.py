@@ -24,3 +24,5 @@ print(result)
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 result = alphabet[:8:2]
 print(result)
+
+#4
