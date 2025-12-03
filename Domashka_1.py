@@ -1,107 +1,124 @@
 #1. У вас есть две переменные:a = 10 b = "5"
 #Напишите код, который преобразует переменную b к числовому типу, складывает a и b, и выводит результат на экран.
-from numbers import Number
 
-from pyexpat.errors import messages
-
-a=10
-b="5"
-b_int=int(b)
-result=a+b_int
-print(result)
+#a=10
+#b="5"
+#b_int=int(b)
+#result=a+b_int
+#print(result)
 
 #2. Объявите переменную с именем my_number и присвойте ей значение 15.
 # Затем переопределите эту переменную, присвоив ей значение 25.
 # Выведите значение переменной на экран после переопределения.
-my_number=15
-my_number=25
-print(my_number)
+
+#my_number=15
+#my_number=25
+#print(my_number)
 
 #3. Напишите код, который сравнивает два числа: 8 и 12.
 # Проверьте, является ли 8 меньше 12, и выведите результат сравнения (True или False) на экран.
-number_1=8
-number_2=12
-print(number_1<number_2)
+
+#number_1=8
+#number_2=12
+#print(number_1<number_2)
 
 #4. Объявите три переменные разных типов данных:
 #Целое число со значением 100
 #Строку с вашим именем
 #Дробное число со значением 3.14
 #Выведите значения всех трёх переменных на экран.
-variable_1 = 100
-variable_2 = "Татьяна"
-variable_3 = 3.14
-print(variable_1,variable_2,variable_3)
+
+#variable_1 = 100
+#variable_2 = "Татьяна"
+#variable_3 = 3.14
+#print(variable_1,variable_2,variable_3)
 
 #5. Напишите код, который выполняет следующие арифметические операции с числами 20 и 4:
 #Сложение Вычитание Умножение Деление
 #Выведите результаты всех четырёх операций на экран.
-number_1 = 20
-number_2 = 4
-result = number_1 + number_2
-print(result)
-result = number_1 - number_2
-print(result)
-result = number_1 * number_2
-print(result)
-result = number_1 / number_2
-print(result)
+
+#number_1 = 20
+#number_2 = 4
+#result = number_1 + number_2
+#print(result)
+#result = number_1 - number_2
+#print(result)
+#result = number_1 * number_2
+#print(result)
+#result = number_1 / number_2
+#print(result)
 
 #6. Объяви две переменные: имя (со значением "Анна") и возраст (со значением 25).
 # Напиши код, который выводит на экран строку в формате: "Имя: Анна, Возраст: 25".
-name = "Анна"
-age = 25
-print("Имя:",name,"Возраст:",age)
+
+#name = "Анна"
+#age = 25
+#print("Имя:",name,"Возраст:",age)
 
 #7. Напиши код, который сравнивает два числа: 15 и 10.
 # Проверь, является ли 15 больше 10, и выведи на экран результат этого сравнения (True или False)
-number_1 = 15
-number_2 = 10
-print(number_1 > number_2)
+
+#number_1 = 15
+#number_2 = 10
+#print(number_1 > number_2)
 
 #8. У тебя есть две переменные: a = "10" (это строка) и b = 5 (это целое число).
 #Преобразуй переменную a в целое число, сложи её с переменной b и выведи результат на экран.
-a = "10"
-b = 5
-a_int = int(a)
-result = a_int + b
-print(result)
+
+#a = "10"
+#b = 5
+#a_int = int(a)
+#result = a_int + b
+#print(result)
 
 #9. Объяви переменную number и присвой ей значение 7.5.
 # Затем переопредели эту переменную, присвоив ей значение 10.
 # Выведи на экран конечное значение переменной number.
-number=7.5
-number=10
-print(number)
+
+#number=7.5
+#number=10
+#print(number)
 
 #10. Объяви три переменные: x = 8, y = 3, z = 2.
 #Выполни следующие операции и выведи результаты:
 #x + y * z
 #(x + y) * z
 #Сравни результаты и убедись, что они разные.
-x = 8
-y = 3
-z = 2
-result_1 = x + y * z
-print(result_1)
-result_2 = (x + y) * z
-print(result_2)
-print(result_1 != result_2)
+
+#x = 8
+#y = 3
+#z = 2
+#result_1 = x + y * z
+#print(result_1)
+#result_2 = (x + y) * z
+#print(result_2)
+#print(result_1 != result_2)
 
 #11 Объяви две переменные: одну с именем age и целочисленным значением, другую с именем name и строковым значением.
 # Затем выведи на экран сообщение вида: "Привет, меня зовут [name], мне [age] лет."
-age = 25
-name = "Татьяна"
-messages = f"Привет, меня зовут {name}, мне {age} лет."
-print(messages)
+
+#age = 25
+#name = "Татьяна"
+#messages = f"Привет, меня зовут {name}, мне {age} лет."
+#print(messages)
 
 #12 Напишите код, который сравнивает два числа: 15 и 10.
 # Проверьте и выведите результат следующих операций сравнения:
 #15 больше 10
 #15 меньше 10
 #15 равно 10
-number_1 = 15
-number_2 = 10
-print(number_1 > number_2)
-print(number_1 < number_2)
-print(number_1 == number_2)
+#number_1 = 15
+#number_2 = 10
+#print(number_1 > number_2)
+#print(number_1 < number_2)
+#print(number_1 == number_2)
+
+#13 Создай три переменные: a = 15 b = 4 c = 2
+#Вычисли результат выражения: a разделить на b, затем прибавить c, и всё это умножить на b.
+#Запиши это выражение в одну строку кода (с использованием скобок для правильного порядка операций)
+# и сохрани результат в переменную result. Выведи значение result на экран.
+#a = 15
+#b = 4
+#c = 2
+#result = (a/b + c) * b
+#print(result)
