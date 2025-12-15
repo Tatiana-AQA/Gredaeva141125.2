@@ -45,12 +45,66 @@
 #Напишите код, который создает объект класса Student с именем "Анна" и student_id = 12345,
 #а затем выводит оба этих атрибута (например, с помощью print).
 
-class Person:
-    def __init__(self,name):
-        self.name = name
-class Student (Person):
-    def __init__(self,name,student_id):
-        super().__init__(name)
-        self.student_id = student_id
-new_student = Student("Анна", 12345)
-print(new_student.name, new_student.student_id)
+#class Person:
+#    def __init__(self,name):
+#        self.name = name
+#class Student (Person):
+#    def __init__(self,name,student_id):
+#        super().__init__(name)
+#        self.student_id = student_id
+#new_student = Student("Анна", 12345)
+#print(new_student.name, new_student.student_id)
+
+#Задача 4
+#Создайте базовый класс Employee (Сотрудник) с методом work(self), который печатает "Сотрудник выполняет свою работу".
+#Создайте дочерний класс Manager (Менеджер), который наследуется от Employee.
+#В классе Manager переопределите метод work(), но не печатайте новую строку сразу.
+#Внутри переопределенного метода с помощью super() вызовите метод work() родительского класса.
+#После вызова super().work() добавьте еще один print, который выводит "Менеджер управляет командой".
+#Таким образом, при вызове work() у объекта Manager должны выводиться две строки подряд:
+#Строка от родительского метода.
+#Строка от дочернего метода.
+#Напишите код, создающий объект класса Manager и вызывающий его метод work().
+
+#class Employee:
+#    def work(self):
+#        print("Сотрудник выполняет свою работу")
+#class Manager(Employee):
+#    def work(self):
+#        super().work()
+#        print("Менеджер управляет командой")
+#new_manager = Manager()
+#new_manager.work()
+
+#Задача 5
+#Создайте простую иерархию классов, описывающую устройства.
+#Базовый класс Device (Устройство).
+#В его конструкторе __init__(self, brand) сохраните переданный бренд в атрибут self.brand.
+#Также создайте метод power_on(self), который печатает "Устройство включено".
+#Дочерний класс Phone (Телефон), который наследуется от Device.
+#В его конструкторе __init__(self, brand, number):
+#С помощью super() вызовите конструктор родителя, чтобы установить brand.
+#Добавьте и сохраните новый атрибут self.number (номер телефона).
+#Переопределите метод power_on(self). Внутри него:
+#Сначала вызовите super().power_on().
+#Затем добавьте print, который выводит "Набираем номер {self.number}".
+#Напишите код, который создает объект класса Phone с брендом "Nokia" и номером "+7-999-123-45-67",
+#а затем вызывает его метод power_on().
+
+class Device:
+    def __init__(self,brand):
+        self.brand = brand
+    def power_on(self):
+            print("Устройство включено")
+class Phone(Device):
+    def __init__(self,brand,number):
+        super().__init__ (brand)
+        self.number = number
+    def power_on(self):
+        super().power_on()
+        print(f"Набираем номер {self.number}")
+my_phone = Phone("Nokia", "+7-999-123-45-67")
+my_phone.power_on()
+
+
+
