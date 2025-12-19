@@ -1,100 +1,149 @@
 #1 Напишите код, который преобразует всю строку text в нижний регистр и удаляет пробелы с обоих концов.
 # Результат сохраните в переменную result и выведите ее.
 #Исходная строка: text = " ПРИВЕТ, МИР! "
-text = " ПРИВЕТ, МИР! "
-text_trimmed = text.strip()
-result = text_trimmed.lower()
-print(result)
+
+#text = " ПРИВЕТ, МИР! "
+#text_trimmed = text.strip()
+#result = text_trimmed.lower()
+#print(result)
 #решение после советов дипсика
-text = " ПРИВЕТ, МИР! "
-result = text.strip().lower()
-print(result)
+#text = " ПРИВЕТ, МИР! "
+#result = text.strip().lower()
+#print(result)
 
 #2 У вас есть переменные product (название товара) и price (его цена).
 # Используйте f-строку, чтобы создать строку message вида: "Товар [название] стоит [цена] рублей."
 #Исходные данные: product = "яблоки" price = 85
-product = "яблоки"
-price = 85
-result = f"Товар {product} стоит {price} рублей."
-print(result)
+
+#product = "яблоки"
+#price = 85
+#result = f"Товар {product} стоит {price} рублей."
+#print(result)
 
 #3 Дана строка alphabet.
 # Используя срезы, создайте новую строку result, которая содержит каждую вторую букву из первых восьми символов исходной строки.
 #Исходная строка: alphabet = "abcdefghijklmnopqrstuvwxyz"
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-result = alphabet[:8:2]
-print(result)
+
+#alphabet = "abcdefghijklmnopqrstuvwxyz"
+#result = alphabet[:8:2]
+#print(result)
 
 #4 Дан следующий код:
 #text = "Программирование"
 #Напишите программу, которая выведет на экран длину этой строки.
-text = "Программирование"
-count = len(text)
-print(count)
+
+#text = "Программирование"
+#count = len(text)
+#print(count)
 
 #5 Создайте строку, содержащую следующий текст: Привет, мир!. Выведите эту строку на экран.
-text = "Привет, мир!"
-print(text)
+
+#text = "Привет, мир!"
+#print(text)
 
 #6 Дана строка: "Программирование".
 #Напишите код, который выведет на экран первые 6 символов этой строки.
-string = "Программирование"
-substring = string[0:6]
-print(substring)
+
+#string = "Программирование"
+#substring = string[0:6]
+#print(substring)
 
 #7 Дана строка: " я изучаю python ".
 #Напишите код, который удалит все пробелы в начале и конце этой строки.
 # Выведите результат на экран.
-string = " я изучаю python "
-new_string = string.strip()
-print(new_string)
+
+#string = " я изучаю python "
+#new_string = string.strip()
+#print(new_string)
 
 #8 Даны три строки:
 #str1 = "Я"
 #str2 = "изучаю"
 #str3 = "Python"
 #Напишите код, который объединит их в одну строку с пробелами между словами и выведет результат на экран.
-str1 = "Я"
-str2 = "изучаю"
-str3 = "Python"
-str4 = str1 + " " + str2 + " " + str3
-print(str4)
+
+#str1 = "Я"
+#str2 = "изучаю"
+#str3 = "Python"
+#str4 = str1 + " " + str2 + " " + str3
+#print(str4)
 
 #9 Дана строка: "Автоматизация".
 #Напишите код, который выведет на экран последний символ этой строки.
-string = "Автоматизация"
-string_end = string[-1]
-print(string_end)
+
+#string = "Автоматизация"
+#string_end = string[-1]
+#print(string_end)
 
 #10 Даны две переменные:
 #language = "Python" и hours = 2
 #С помощью f-строки создайте и выведите на экран следующее предложение:
 #"Я учу Python уже 2 часа"
-language = "Python"
-hours = 2
-string = f"Я учу {language} уже {hours} часа"
-print(string)
+
+#language = "Python"
+#hours = 2
+#string = f"Я учу {language} уже {hours} часа"
+#print(string)
 
 #11 У вас есть строка: word = "Кодирование"
 #Напишите код, который выведет первый символ этой строки.
-word = "Кодирование"
-print(word[0])
+
+#word = "Кодирование"
+#print(word[0])
 
 #12 У вас есть две строки: str1 = "Привет" и str2 = "мир"
 #Напишите код, который объединит их в одну строку "Привет, мир!" с помощью конкатенации.
-str1 = "Привет"
-str2 = "мир"
-result = str1 + "," + " " + str2 + "!"
-print(result)
+
+#str1 = "Привет"
+#str2 = "мир"
+#result = str1 + "," + " " + str2 + "!"
+#print(result)
 
 #13 У вас есть строка: s = "Эксперимент"
 #Напишите код, который с помощью среза выведет подстроку, содержащую последние 4 символа этой строки.
-s = "Эксперимент"
-result = s[-4:]
-print(result)
 
-# 14 У вас есть строка: my_string = " пылесос " - Обратите внимание на пробелы в начале и в конце строки.
+#s = "Эксперимент"
+#result = s[-4:]
+#print(result)
+
+#14 У вас есть строка: my_string = " пылесос " - Обратите внимание на пробелы в начале и в конце строки.
 #Напишите код, который уберёт пробелы с обоих концов строки с помощью соответствующего строкового метода.
-my_string = " пылесос "
-result = my_string.strip()
-print(result)
+
+#my_string = " пылесос "
+#result = my_string.strip()
+#print(result)
+
+#15 (Базовые методы строк) Дана строка: text = " Я изучаю Python. Это интересно! ". Напишите код, который:
+#Удалит все пробелы в начале и конце строки.
+#Заменит слово "интересно" на "полезно".
+#Переведет весь текст в верхний регистр.
+#Выведите результат каждого шага.
+
+#text = " Я изучаю Python. Это интересно! "
+#text = text.strip()
+#print(text)
+#text = text.replace("интересно", "полезно")
+#print(text)
+#text = text.upper()
+#print(text)
+
+#16 (Базовые методы строк) Дана строка: sentence = "я начал проходить курс по python".
+#Преобразуйте строку так, чтобы каждое слово в ней начиналось с заглавной буквы. Выведите результат.
+
+#sentence = "я начал проходить курс по python"
+#sentence = sentence.title()
+#print(sentence)
+
+#17 (Срезы) Дана строка: alphabet = "abcdefghijklmnopqrstuvwxyz". Используя срезы, получите и выведите строки:
+#Первые 5 букв.
+#Буквы с 10-й по 15-ю.
+#Последние 3 буквы.
+
+#alphabet = "abcdefghijklmnopqrstuvwxyz"
+#str_1 = alphabet[0:5]
+#print(str_1)
+#str_2 = alphabet[9:15]
+#print(str_2)
+#str_3 = alphabet[-3:]
+#print(str_3)
+
