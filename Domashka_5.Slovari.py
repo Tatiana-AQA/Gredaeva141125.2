@@ -92,3 +92,125 @@
 #book["title"] = "Приключения"
 #book["title"] = "Детектив"
 #print(book)
+
+#Задача 10.
+#Раздел: Получение элементов
+#Дан словарь person = {"name": "Anna", "age": 25, "job": "engineer"}.
+#Получи список всех ключей этого словаря и сохрани его в переменную keys_list.
+
+#person = {"name": "Anna", "age": 25, "job": "engineer"}
+#keys_list = list(person.keys())
+#print(keys_list)
+
+#Задача 11.
+#Раздел: Проверка на наличие ключей
+#Дан словарь inventory = {"apples": 5, "oranges": 12}.
+#Проверь с помощью оператора in, есть ли в словаре ключ "bananas".
+#Результат проверки (True или False) сохрани в переменную has_bananas.
+
+#inventory = {"apples": 5, "oranges": 12}
+#has_bananas = "bananas" in inventory
+#print(has_bananas)
+
+#Задача 12.
+#Раздел: Добавление и обновление элементов словаря
+#Дан словарь fruit = {"apple": 50, "banana": 30}. Увеличь цену (value) для ключа "apple" на 20.
+
+#fruit = {"apple": 50, "banana": 30}
+#fruit["apple"] = fruit["apple"] + 20
+#print(fruit)
+
+#Задача 13.
+#Раздел: Удаление элементов словаря
+#Дан словарь temp = {"a": 1, "b": 2, "c": 3}. Удали пару с ключом "b" с помощью оператора del.
+
+#temp = {"a": 1, "b": 2, "c": 3}
+#del temp["b"]
+#print(temp)
+
+#Задача 14.
+#Раздел: Создание словаря
+#Создай пустой словарь с именем my_dict с помощью фигурных скобок.
+
+#my_dict = {}
+#print(my_dict)
+
+#Задача 15.
+#Раздел: Получение элементов
+#Используя словарь person = {"name": "Anna", "age": 25, "job": "engineer"},
+#получи список всех значений и сохрани его в переменную values_list.
+
+#person = {"name": "Anna", "age": 25, "job": "engineer"}
+#values_list = list(person.values())
+#print(values_list)
+
+#Задача 16.
+#Раздел: Проверка на наличие значений
+#Дан словарь grades = {"Math": "A", "Physics": "B", "Chemistry": "A"}.
+#Проверь, есть ли среди значений этого словаря оценка "A". Результат (True или False) сохрани в переменную has_top_grade.
+
+#grades = {"Math": "A", "Physics": "B", "Chemistry": "A"}
+#has_top_grade = "A" in grades.values()
+#print(has_top_grade)
+
+#Задача 17.
+#Раздел: Проверка на наличие ключей
+#Для словаря inventory = {"apples": 5, "oranges": 12} проверь с помощью метода .get(), есть ли ключ "apples".
+#Если ключ есть, сохрани в переменную apples_count его значение, если нет — сохрани число 0.
+
+#inventory = {"apples": 5, "oranges": 12}
+#apples_count = inventory.get("apples", 0)
+#print(apples_count)
+
+#Задача 18.
+#Раздел: Доступ к элементам словаря по ключу
+#Дан словарь book = {"title": "1984", "author": "Orwell", "year": 1949}.
+#Получи и сохрани в переменную book_title значение, связанное с ключом "title".
+
+#book = {"title": "1984", "author": "Orwell", "year": 1949}
+#book_title = book["title"]
+#print(book_title)
+
+#Задача 19.
+#Раздел: Получение элементов
+#Используя словарь person = {"name": "Anna", "age": 25, "job": "engineer"},
+#получи список всех пар (ключ, значение) в виде кортежей и сохрани его в переменную items_list.
+
+#person = {"name": "Anna", "age": 25, "job": "engineer"}
+#items_list = list(person.items())
+#print(items_list)
+
+#Задача 20.
+#Раздел: Доступ к элементам словаря по ключу
+#Дан словарь colors = {"red": "красный", "blue": "синий"}.
+#Получи значение для ключа "green" с помощью метода .get(),
+#чтобы в случае отсутствия ключа возвращалось значение "перевод не найден".
+
+#colors = {"red": "красный", "blue": "синий"}
+#translation = colors.get("green", "перевод не найден")
+#print(translation)
+
+#Задача 21.
+#Раздел: Создание словаря
+#Создай словарь с именем student, который содержит три пары ключ-значение:
+#ключ "name" со значением "Alex", ключ "age" со значением 20 и ключ "city" со значением "Moscow".
+
+#student = {"name":"Alex", "age":20, "city":"Moscow"}
+#print(student)
+
+#Задача 22.
+#Раздел: Добавление и обновление элементов словаря
+#Дан словарь car = {"brand": "Toyota"}. Добавь в него новый ключ "model" со значением "Camry"
+
+#car = {"brand": "Toyota"}
+#car["model"] = "Camry"
+#print(car)
+
+#Задача 23.
+#Раздел: Удаление элементов словаря
+#Дан словарь data = {"x": 10, "y": 20, "z": 30}.
+#Удали пару с ключом "y" с помощью метода .pop() и сохрани удаленное значение в переменную removed_value.
+
+data = {"x": 10, "y": 20, "z": 30}
+removed_value = data.pop("y")
+print(removed_value)
